@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优质功能性天然提取物和粉末，用于食品、饮料、补充剂和化妆品 | 藏红花、蘑菇和奇亚籽产品</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+        .nav {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #667eea;
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .about {
+            background: #f8f9fa;
+        }
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .about-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            padding: 20px 20px 10px;
+            color: #333;
+        }
+        .product-card p {
+            padding: 0 20px 20px;
+            color: #666;
+        }
+        .news {
+            background: #f8f9fa;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .news-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .news-item:hover {
+            transform: translateY(-3px);
+        }
+        .news-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .news-item h4 {
+            padding: 15px;
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.5;
+        }
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .contact .section-title {
+            color: white;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .contact-item {
+            text-align: center;
+        }
+        .contact-item svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            .nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#products">产品</a></li>
+            <li><a href="#news">新闻与信息</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>您可信赖的功能性天然提取物和粉末来源</h1>
+        <p>我们为全球食品、饮料、补充剂和化妆品行业提供可持续的植物提取物和粉末——以可信赖的功能性营养滋养未来。</p>
+    </header>
+
+    <section class="section about" id="about">
+        <h2 class="section-title">关于乐世买</h2>
+        <div class="about-content">
+            <div>
+                <h3>我们的使命</h3>
+                <p>乐世买致力于为全球食品、饮料、补充剂和化妆品行业提供高质量的功能性天然提取物和粉末。我们专注于可持续发展，确保每一款产品都符合最高的质量标准。</p>
+                <p>我们的团队由专业的科学家和营养师组成，致力于研发创新的植物基解决方案，帮助客户创造更健康、更可持续的产品。</p>
+            </div>
+            <img src="https://aka.doubaocdn.com/s/peK91wNo5k" alt="乐世买">
+        </div>
+    </section>
+
+    <section class="section" id="products">
+        <h2 class="section-title">产品</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://aka.doubaocdn.com/s/QwC01wNo5k" alt="藏红花系列">
+                <h3>藏红花系列</h3>
+                <p>优质藏红花提取物，适用于健康补充剂和功能性食品。</p>
+            </div>
+            <div class="product-card">
+                <img src="https://aka.doubaocdn.com/s/QwC01wNo5k" alt="有机蘑菇系列">
+                <h3>有机蘑菇系列</h3>
+                <p>天然有机蘑菇提取物，富含营养成分。</p>
+            </div>
+            <div class="product-card">
+                <img src="https://aka.doubaocdn.com/s/9XFK1wNo5k" alt="超级食品系列">
+                <h3>超级食品与药用食品活性成分</h3>
+                <p>奇亚籽粉及其他超级食品成分。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section news" id="news">
+        <h2 class="section-title">新闻与信息</h2>
+        <div class="news-grid">
+            <a href="#" class="news-item">
+                <img src="https://waimao.office.163.com/site/api/pub/resource/download?key=87db5dd853b1ce0d3756100b865d3b77/common/img/6967b1f7adbe4a579b6ad6584cbf57b0" alt="新闻1">
+                <h4>欧洲更年期支持藏红花提取物：女性健康品牌非激素配方策略实用指南</h4>
+            </a>
+            <a href="#" class="news-item">
+                <img src="https://waimao.office.163.com/site/api/pub/resource/download?key=87db5dd853b1ce0d3756100b865d3b77/common/img/cb617e804c2b4402822dd8308f28b14b" alt="新闻2">
+                <h4>藏红花提取物用于围绝经期：解决240亿美元市场中的生物活性稳定性</h4>
+            </a>
+            <a href="#" class="news-item">
+                <img src="https://waimao.office.163.com/site/api/pub/resource/download?key=87db5dd853b1ce0d3756100b865d3b77/common/img/a9514501fb03417baba257747e9a818f" alt="新闻3">
+                <h4>藏红花提取物定价：为什么"价格过高"对合同制造商来说是技术上的不匹配</h4>
+            </a>
+            <a href="#" class="news-item">
+                <img src="https://waimao.office.163.com/site/api/pub/resource/download?key=87db5dd853b1ce0d3756100b865d3b77/common/img/09508e3c819a40548b5a210858823b6a" alt="新闻4">
+                <h4>藏红花提取物供应商：三重标准化大脑健康解决方案</h4>
+            </a>
+            <a href="#" class="news-item">
+                <img src="https://waimao.office.163.com/site/api/pub/resource/download?key=87db5dd853b1ce0d3756100b865d3b77/common/img/78e0835a4d474234bd1922722bb58d1" alt="新闻5">
+                <h4>藏红花提取物助眠：30毫克功效与>26%活性标志物</h4>
+            </a>
+            <a href="#" class="news-item">
+                <img src="https://waimao.office.163.com/site/api/pub/resource/download?key=87db5dd853b1ce0d3756100b865d3b77/common/img/d565e43f7895489e8d3f1f6428da6e94" alt="新闻6">
+                <h4>藏红花提取物制造商指南：使用5%和8%高效液相色谱番红花苷规格</h4>
+            </a>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <p>电话: +86 4008206310</p>
+            </div>
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <p>电子邮件: bd101@leesmum.com</p>
+            </div>
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <p>地址：上海市宝山区文川路516号A栋5-22室</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#products">产品</a></li>
+            <li><a href="#news">新闻与信息</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+        <p>备案号：沪ICP备19002156</p>
+        <p>&copy; 2024 乐世买. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
